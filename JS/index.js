@@ -2,34 +2,27 @@
 
 $(".openNav").click(function () {
 
-    $("#leftMenu").animate({ width: '250px' }, 50)
+    $("#Menu").animate({ width: '250px' }, 50)
     $("#home-content").animate({ marginLeft: '250px' }, 50)
 })
 
 $(".closebtn").click(function () {
-    $("#leftMenu").animate({ width: '0px' }, 50)
+    $("#Menu").animate({ width: '0px' }, 50)
     $("#home-content").animate({ marginLeft: '0px' }, 50)
 })
 
 
 
-/*scrollmenu*/
-$("#leftMenu a").click(function () {
-
+// scrollmenu to target section
+$("#Menu a").click(function () {
     var sectionId = $(this).attr("href");
-
     var positionOfSection = $(sectionId).offset().top;
-
     $("html , body").animate({ scrollTop: positionOfSection }, 200);
-
-
-
-
 })
 
 
 
-/*Accordion*/
+// Accordion Function to toglle between open and close singer info
 
 
 $('#sliderDown .toggle').click(function () {
@@ -44,7 +37,7 @@ $('#sliderDown .toggle').click(function () {
 
 window.onload = function () {
 
-    countDownToTime("10 october 2024 9:56:00");
+    countDownToTime("10 october 2024 10:00:00");
 }
 
 function countDownToTime(countTo) {
@@ -74,7 +67,7 @@ function countDownToTime(countTo) {
 
 
 
-/*textarea*/
+// textarea Function to calc the charcters typed 
 
 var maxLength = 100;
 $('textarea').keyup(function () {

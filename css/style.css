@@ -1,3 +1,4 @@
+/* --------------- Home Section ---------------------- */
 #Home
 {
     width: 100%;
@@ -19,7 +20,20 @@
     background-color: rgba(214, 46, 51 , 0.6);
 }
 
-#leftMenu
+
+#home-content {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#home-content h2
+{
+    font-size: 60px;
+}
+
+
+/* --------------- Menu Section ---------------------- */
+#Menu
 {
     height: 100%;
     width: 0;
@@ -44,33 +58,21 @@
 }
 
 
-
-
 #Home h2
 {
     margin-top: 200px;
     
 }
 
-
-
-
 #Home h2,p
 {
-    text-align: center;
-    
+    text-align: center;   
 }
-
-
-
 
 .sidenav
 {
     background-color: #414658;
 }
-
-
-
 
 .sidenav a:hover{
     color:  rgba(214, 46, 51 , 0.4);
@@ -83,24 +85,6 @@
     font-size: 36px;
     margin-left: 50px;
 }
-
-#home-content {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-#home-content h2
-{
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-
 
 /*seconed section*/
 
